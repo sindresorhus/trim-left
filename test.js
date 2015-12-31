@@ -1,15 +1,11 @@
-'use strict';
-var test = require('ava');
-var trimLeft = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.assert(trimLeft('  unicorn  ') === 'unicorn  ');
-	t.assert(trimLeft('\r\n  \nunicorn') === 'unicorn');
-
-	t.assert(trimLeft('\u00A0\uFEFFunicorn') === 'unicorn');
+test(t => {
+	t.is(fn('  unicorn  '), 'unicorn  ');
+	t.is(fn('\r\n  \nunicorn'), 'unicorn');
+	t.is(fn('\u00A0\uFEFFunicorn'), 'unicorn');
 
 	// zero-width space (zws), next line character (nel), non-character (bom) are not whitespace
-	t.assert(trimLeft('\u200B\u0085\uFFFE') === '\u200B\u0085\uFFFE');
-
-	t.end();
+	t.is(fn('\u200B\u0085\uFFFE'), '\u200B\u0085\uFFFE');
 });
