@@ -1,6 +1,6 @@
 {
 	"name": "trim-left",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"description": "Similar to `String#trim()` but removes only whitespace on the left",
 	"license": "MIT",
 	"repository": "sindresorhus/trim-left",
