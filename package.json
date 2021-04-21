@@ -1,37 +1,41 @@
 {
-  "name": "trim-left",
-  "version": "1.0.1",
-  "description": "Similar to String#trim() but removes only whitespace on the left",
-  "license": "MIT",
-  "repository": "sindresorhus/trim-left",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "trim",
-    "left",
-    "string",
-    "str",
-    "util",
-    "utils",
-    "utility",
-    "whitespace",
-    "space",
-    "remove",
-    "delete"
-  ],
-  "devDependencies": {
-    "ava": "*"
-  }
+	"name": "trim-left",
+	"version": "1.0.1",
+	"description": "Similar to `String#trim()` but removes only whitespace on the left",
+	"license": "MIT",
+	"repository": "sindresorhus/trim-left",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"trim",
+		"left",
+		"string",
+		"str",
+		"util",
+		"utils",
+		"utility",
+		"whitespace",
+		"space",
+		"remove",
+		"delete"
+	],
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"xo": "^0.39.1"
+	}
 }

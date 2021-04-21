@@ -1,4 +1,3 @@
-'use strict';
-module.exports = function (str) {
-	return str.replace(/^[\s\uFEFF\u00A0]+/, '');
-};
+export default function trimLeft(string) {
+	return string.replace(/^[\s\uFEFF\u00A0]+/, '');
+}
