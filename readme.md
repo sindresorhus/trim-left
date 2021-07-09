@@ -1,3 +1,7 @@
+Deprecated in favor of `String#trimStart`.
+
+---
+
 # trim-left
 
 > Similar to [`String#trim()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim) but removes only whitespace on the left
